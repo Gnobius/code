@@ -1,0 +1,38 @@
+ # bike(1998)
+    #check_type_variable(bike)
+    #print("Hello world")
+    #bike(1998)
+    #print(return_multiple())
+    #added_digits = perform_addition(a=10, b=11)
+    a = []
+    b = 5
+    print(f"This is my variable value: {a}, and this is the variable b: {b}")
+
+
+    my_string, my_digit, my_list = return_multiple()
+    print(my_string, my_digit, my_list) 
+  
+
+
+def bike(year, model="mc", ):
+    print(model, year)
+    
+    
+def return_multiple():
+    """ Returnerar 3 variabler av olika typer """
+    a = "anka"
+    b = 3
+    c = ['Tre ankor i kostym']
+
+    return a, b, c
+
+def perform_addition(a=5, b=6):
+    a, b = 5, 6
+
+    return a+b
+
+def check_type_variable(variable):
+    print(type(variable))
+
+def check_dir(variable):
+    print(dir(variable))
