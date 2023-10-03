@@ -9,7 +9,8 @@ def return_multiple():
 
     return a, b, c
 
-
+a, b, c = return_multiple()
+print(a)
 
     #added_digits = perform_addition(a=10, b=11)
     a = []
@@ -37,8 +38,8 @@ def main():
 
     my_list = ["Anton", "Adrian", "Anna"]
 
-    for i, e in enumerate(my_list):
-        print(i)
-        print(e)
+    for _, e in enumerate(my_list):
+        # print(i)
+        #print(e)
 if __name__ == "__main__":
     main()
