@@ -1,16 +1,18 @@
-print("Jag befinner mig i pytest3")
-
+a = 12
 
 class Person():
     def __init__(self, age=10, name="John"):
         super().__init__()
-        self.age = age
+        self.age = age + a
         self.name = name
 
-    def get_person_name(self):
-        pass
+    def get_person_age(self):
+        """Gets the age of the person"""
+        return self.age
 
-my_person = Person(age=12, name="Rose")
-print(dir(my_person))
-print("my persons age is: ", my_person.age)
-print("my persons namne is: ", my_person.name)
+    def print_person_age(self):
+        print(self.age)
+
+my_person = Person()
+my_person.print_person_age()
+
